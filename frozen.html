@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="fontawesome-free-5.6.3-web\css\all.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+	<title>Frozen Responsive Website</title>
+    <link rel = "stylesheet" href="frozen.css">
+</head>
+<body>
+       <div class="container"> 
+        <div class="nav">
+            <div class="logo">
+                <img src="https://i.ibb.co/fFBGMZJ/frozenlogo.png" alt="frozenlogo" border="0">
+            </div>
+            <!--for hamburger menu-->
+            <div class="box">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Sing-Along</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+            <div class="navbut"><a href="#">Get our App</a></div>
+        </div>
+            <div class="sec1">
+                <i class="fa fa-search"></i> <input type="search" name="search" placeholder="Search..."/>
+                <p>Experiencing the global phenomenon with the movie + sing-along</p>
+                <a href="#">Explore movies</a>
+            </div>
+            <div class="sec2">
+                <img src="https://i.ibb.co/k62k3Sj/frozensec.png" alt="frozensec" border="0">
+            </div>
+            <div class="social">
+                <span>Our</span>
+                <span>social</span>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest"></i>
+            </div>
+       </div>
+       <script>
+           function ShowMenu(){
+            var box = document.querySelector(".box");
+            var menu = document.querySelector(".menu");
+            box.addEventListener("click", () => {
+                menu.classList.toggle("show-menu");
+                box.classList.toggle("toggle");
+            });
+           }
+           //now we call the function
+           ShowMenu();
+       </script>
+    </body>
+</html>
